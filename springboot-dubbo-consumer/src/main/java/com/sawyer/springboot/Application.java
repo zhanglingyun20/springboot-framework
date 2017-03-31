@@ -1,10 +1,10 @@
-package com.sawyer.springboot.dubbo;
+package com.sawyer.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.sawyer.springboot.dubbo.service.TestService;
+import com.sawyer.springboot.service.TestService;
 
 /**
  * 

@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  address: 127.0.0.1
+  sessionTimeout: 30
+  contextPath: /api
+spring:
+  dubbo:
+    application.name: consumer
+    registry.address: zookeeper://127.0.0.1:2181
+    scan: com.sawyer.springboot

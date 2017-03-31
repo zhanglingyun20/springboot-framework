@@ -1,9 +1,9 @@
-package com.sawyer.springboot.dubbo.service;
+package com.sawyer.springboot.service;
 
 import org.springframework.stereotype.Service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.sawyer.springboot.dubbo.api.HelloService;
+import com.sawyer.springboot.api.HelloService;
 
 @Service
 public class TestService {

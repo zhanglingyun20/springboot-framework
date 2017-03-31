@@ -1,4 +1,4 @@
-package com.sawyer.springboot.dubbo;
+package com.sawyer.springboot;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -8,6 +8,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
+
+import com.sawyer.springboot.DubboProperties;
 
 /**
  * 

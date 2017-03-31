@@ -1,7 +1,7 @@
-package com.sawyer.springboot.dubbo.provider.service;
+package com.sawyer.springboot.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.sawyer.springboot.dubbo.api.HelloService;
+import com.sawyer.springboot.api.HelloService;
 /**
  * 
  * @ClassName: HelloServiceImpl  

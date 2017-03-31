@@ -4,7 +4,7 @@ spring:
     registry.address: zookeeper://127.0.0.1:2181
     protocol.name: dubbo
     protocol.port: 20880
-    scan: com.sawyer.springboot.dubbo
+    scan: com.sawyer.springboot
 logging:
      level:
         root: debug

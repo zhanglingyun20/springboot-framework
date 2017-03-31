@@ -1,4 +1,4 @@
-package com.sawyer.springboot.dubbo.api;
+package com.sawyer.springboot.api;
 
 public interface HelloService {
 
