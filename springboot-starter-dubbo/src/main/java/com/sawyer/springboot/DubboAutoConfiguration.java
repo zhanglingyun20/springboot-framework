@@ -1,4 +1,4 @@
-package com.sawyer.springboot.dubbo;
+package com.sawyer.springboot;
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;
 import com.alibaba.dubbo.config.RegistryConfig;

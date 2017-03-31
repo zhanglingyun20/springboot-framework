@@ -1,4 +1,4 @@
-package com.sawyer.springboot.dubbo;
+package com.sawyer.springboot;
 import org.springframework.boot.context.event.ApplicationPreparedEvent;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;

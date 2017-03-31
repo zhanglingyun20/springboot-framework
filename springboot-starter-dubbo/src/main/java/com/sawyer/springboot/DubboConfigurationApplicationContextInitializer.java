@@ -1,4 +1,4 @@
-package com.sawyer.springboot.dubbo;
+package com.sawyer.springboot;
 
 import com.alibaba.dubbo.config.spring.AnnotationBean;
 import org.springframework.beans.BeanUtils;
