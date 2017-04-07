@@ -6,5 +6,7 @@ public interface UserService {
 
 	public User getUser(String mobile);
 	
-	public void saveUser(User user);
+	public int saveUser(User user);
+	
+	public User getUserByMobile(String mobile);
 }

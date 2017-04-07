@@ -5,6 +5,29 @@ spring:
     protocol.name: dubbo
     protocol.port: 20880
     scan: com.sawyer.springboot
+  datasource:
+    name: springboot
+    url: jdbc:mysql://10.202.6.64:3306/springboot?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+    username: root
+    password: sf123456789
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
 logging:
      level:
         root: debug
+mybatis:
+  typeAliasesPackage: com.sawyer.springboot.model  
+  mapperLocations: classpath:mapper/*.xml

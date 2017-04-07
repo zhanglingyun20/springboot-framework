@@ -1,5 +1,7 @@
 package com.sawyer.springboot.service;
 
+import java.util.Objects;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -23,13 +25,14 @@ public class UserInfoService {
 	public UserService userService;
 
 	public User getUserByMobile(String mobile) {
-		if (!"123456".equals(mobile)) {
-			throw new BussinessException("errors.mobile.error");
-		}
-		return userService.getUser(mobile);
+		return userService.getUserByMobile(mobile);
 	}
 
 	public void saveUser(UserRequest userRequest) {
+		String mobile = userRequest.getMobile();
+		if (Objects.nonNull(userService.getUserByMobile(mobile))) {
+			throw new BussinessException("errors.mobile.already.exists");
+		}
 		User user = new User();
 		BeanUtils.copyProperties(userRequest, user);
 		userService.saveUser(user);

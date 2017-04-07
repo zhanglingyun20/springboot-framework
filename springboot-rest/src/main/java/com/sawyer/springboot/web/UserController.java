@@ -9,6 +9,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +31,7 @@ import com.sawyer.springboot.service.UserInfoService;
 @RestController
 @RequestMapping("/user")
 @Api(value = "User", description = "test User swagger API")
+@Validated
 public class UserController {
 
 	@Autowired
@@ -54,7 +56,7 @@ public class UserController {
 	@ApiOperation(value="根据用户号码查询用户", notes="根据用户号码查询用户")
 	@ApiImplicitParam(name = "mobile", value = "用户手机", required = true, dataType = "String")
 	public ResponseVo<?> getUser(
-			@Valid @NotNull @PathVariable("mobile") String mobile) {
+			@NotNull @PathVariable("mobile") String mobile) {
 		return new ResponseVo<>(userInfoService.getUserByMobile(mobile));
 	}
 }
